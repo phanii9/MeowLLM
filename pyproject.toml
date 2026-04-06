@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meowllm"
+version = "0.1.0"
+description = "A tiny language model that talks like a house cat named Miso."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+    {name = "phanii9"},
+]
+keywords = ["llm", "transformer", "tiny", "character", "educational", "cat"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.1.0",
+    "tokenizers>=0.15.0",
+]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.25.0"]
+hub = ["huggingface_hub>=0.20.0"]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/phanii9/MeowLLM"
+Issues = "https://github.com/phanii9/MeowLLM/issues"
+Repository = "https://github.com/phanii9/MeowLLM"
+
+[project.scripts]
+meow-generate = "meow.generate_data:main"
+meow-tokenizer = "meow.tokenizer:main"
+meow-train = "meow.train:main"
+meow-chat = "meow.inference:main"
+
+[tool.setuptools]
+packages = ["meow"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501", "E741"]

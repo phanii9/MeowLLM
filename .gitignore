@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Training artifacts (regenerated locally)
+checkpoints/
+wandb/
+runs/
+*.pt
+*.bin
+*.safetensors
+
+# Model weights from HF are NOT checked in — they're hosted
+# Dataset files are intentionally tracked (regenerating takes time)
+# and live in data/ — but delete them if you prefer to regenerate:
+# data/*.jsonl
+# data/tokenizer.json
+
+# Logs
+*.log
+
+# OS
+Thumbs.db

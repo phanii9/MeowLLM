@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360" role="img" aria-labelledby="title desc">
+  <title id="title">MeowLLM — Miso, a small loaf cat</title>
+  <desc id="desc">An illustration of a small orange tabby cat in the classic "loaf" sitting pose, with its paws tucked underneath and eyes half-closed. Title reads "MeowLLM" with tagline "a tiny language model that talks like a house cat".</desc>
+
+  <!-- background (warm cream) -->
+  <rect width="600" height="360" fill="#fdf7ec"/>
+
+  <!-- decorative dots pattern -->
+  <g fill="#f5e6c8" opacity="0.6">
+    <circle cx="60" cy="60" r="3"/>
+    <circle cx="540" cy="60" r="3"/>
+    <circle cx="60" cy="300" r="3"/>
+    <circle cx="540" cy="300" r="3"/>
+    <circle cx="120" cy="40" r="2"/>
+    <circle cx="480" cy="40" r="2"/>
+    <circle cx="120" cy="320" r="2"/>
+    <circle cx="480" cy="320" r="2"/>
+  </g>
+
+  <!-- sun spot on the floor -->
+  <ellipse cx="300" cy="270" rx="150" ry="18" fill="#f7e3a8" opacity="0.7"/>
+
+  <!-- tail curling around the loaf -->
+  <path d="M 395 255 Q 440 240 445 210 Q 448 185 430 180"
+        fill="none" stroke="#c96f2a" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 395 255 Q 440 240 445 210 Q 448 185 430 180"
+        fill="none" stroke="#e08540" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- cat body (loaf shape) -->
+  <path d="M 180 260 Q 180 150 300 150 Q 420 150 420 260 Z"
+        fill="#e08540" stroke="#a15515" stroke-width="3"/>
+
+  <!-- belly shading -->
+  <path d="M 210 255 Q 210 200 300 200 Q 390 200 390 255 Z"
+        fill="#f0a868" opacity="0.5"/>
+
+  <!-- tabby stripes on back -->
+  <path d="M 250 160 Q 260 180 255 200" fill="none" stroke="#a15515" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 300 152 Q 310 175 305 195" fill="none" stroke="#a15515" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 350 160 Q 345 185 355 205" fill="none" stroke="#a15515" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- left ear -->
+  <path d="M 220 165 L 210 115 L 255 150 Z" fill="#e08540" stroke="#a15515" stroke-width="3"/>
+  <path d="M 220 158 L 218 130 L 242 152 Z" fill="#f5b08a"/>
+
+  <!-- right ear -->
+  <path d="M 380 165 L 390 115 L 345 150 Z" fill="#e08540" stroke="#a15515" stroke-width="3"/>
+  <path d="M 380 158 L 382 130 L 358 152 Z" fill="#f5b08a"/>
+
+  <!-- left eye (closed, curved line — content cat) -->
+  <path d="M 250 200 Q 258 210 266 200" fill="none" stroke="#2d1810" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- right eye (closed) -->
+  <path d="M 334 200 Q 342 210 350 200" fill="none" stroke="#2d1810" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- nose (tiny pink triangle) -->
+  <path d="M 295 220 L 305 220 L 300 228 Z" fill="#d87a8f"/>
+
+  <!-- mouth (small smile) -->
+  <path d="M 300 228 Q 293 236 286 232" fill="none" stroke="#2d1810" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 300 228 Q 307 236 314 232" fill="none" stroke="#2d1810" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- whiskers -->
+  <line x1="240" y1="225" x2="210" y2="220" stroke="#8b5a2b" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="240" y1="230" x2="210" y2="232" stroke="#8b5a2b" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="360" y1="225" x2="390" y2="220" stroke="#8b5a2b" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="360" y1="230" x2="390" y2="232" stroke="#8b5a2b" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- tiny z's (napping indicator) -->
+  <g font-family="Georgia, serif" fill="#c96f2a" opacity="0.7">
+    <text x="440" y="130" font-size="22" font-style="italic">z</text>
+    <text x="460" y="110" font-size="18" font-style="italic">z</text>
+    <text x="478" y="92" font-size="14" font-style="italic">z</text>
+  </g>
+
+  <!-- title text -->
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="300" y="50" font-size="42" font-weight="bold" fill="#a15515">MeowLLM</text>
+    <text x="300" y="75" font-size="15" fill="#8b5a2b" font-style="italic">a tiny language model that talks like a house cat</text>
+  </g>
+
+  <!-- subtle footer line -->
+  <g font-family="monospace" text-anchor="middle" fill="#a15515" opacity="0.7">
+    <text x="300" y="340" font-size="12">~3.5M params · 15 topics · trains in 20 minutes</text>
+  </g>
+</svg>

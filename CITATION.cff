@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use MeowLLM, please cite it as below."
+title: "MeowLLM: a tiny character language model that talks like a house cat"
+version: 0.1.0
+date-released: 2026-04-06
+authors:
+  - family-names: phanii9
+    given-names: ""
+repository-code: "https://github.com/phanii9/MeowLLM"
+license: MIT
+keywords:
+  - language-model
+  - transformer
+  - character-model
+  - educational
+  - tiny-model
+abstract: >-
+  MeowLLM is a ~3.5M parameter decoder-only transformer trained from scratch
+  to speak in the voice of a single house cat character called Miso.
+  Built with modern tiny-LM components (RoPE, RMSNorm, SwiGLU, SDPA, tied
+  embeddings) and a slot-based compositional synthetic data generator with
+  strict character filtering.
